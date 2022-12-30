@@ -17,7 +17,7 @@ public class ZipFileTest {
     ClassLoader cl = ZipFileTest.class.getClassLoader();
 
     @Test
-    void ParseZipFile() throws Exception {
+    void parseZipFile() throws Exception {
         try (
                 InputStream resource = cl.getResourceAsStream("testZip.zip");
                 ZipInputStream zis = new ZipInputStream(resource)
